@@ -1,47 +1,57 @@
 # AI-Based Adaptive Interview Preparation System
 
-**Live demo:** https://ai-interview-preparation-cb5tdxnivdynztq8tfhxeh.streamlit.app/
+## Project Overview
+The AI-Based Adaptive Interview Preparation System is designed to help students prepare for technical interviews through AI-assisted interview practice and personalized preparation.
 
-This project demonstrates an adaptive technical interview preparation workflow using classical AI concepts.
+## Live Application
+🚀 **Try the application here:**  
+https://ai-interview-preparation-cb5tdxnivdynztq8tfhxeh.streamlit.app/
 
-## Project contents
+## Project Features
+- AI-assisted interview preparation
+- Practice for technical interviews
+- Adaptive preparation support
+- Interview-related questions and guidance
+- User-friendly application interface
 
-- `desktop_prototype.py` — supplied Python/Tkinter prototype source code.
-- `AI_Interview_Preparation_Presentation.pptx` — 20-slide project presentation.
-- `AI_Interview_Preparation_Project_Report.docx` — project report.
-- `screenshots/` — screenshots supplied with the project.
-- `requirements.txt` — no third-party packages are required for the Tkinter prototype.
+## Technologies Used
+- Python
+- Streamlit
+- Google Gemini API
+- Artificial Intelligence
 
-## AI concepts covered
+## Repository Contents
+- `desktop_prototype.py` — Python desktop prototype
+- `AI_Interview_Preparation_Presentation.pptx` — Project presentation
+- `AI_Interview_Preparation_Project_Report.docx` — Project report
+- `screenshots/` — Project screenshots
+- `requirements.txt` — Python dependencies
+- `.env.example` — Example environment configuration
 
-- Classical search: BFS, DFS, Uniform Cost Search, Iterative Deepening, Bidirectional Search.
-- Informed and local search: Greedy Best-First, A*, Hill Climbing, Simulated Annealing.
-- Constraint satisfaction: domain filtering, constraint relaxation and backtracking.
-- Propositional logic: forward chaining, backward chaining and resolution.
-- First-order logic: unification and forward chaining.
-- Question evaluation based on expected keywords, plus an offline fallback question generator.
+## How to Run the Desktop Prototype
 
-## Run the supplied desktop prototype
+1. Clone or download this repository.
+2. Install the required dependencies:
 
-The source file uses Python's standard library and Tkinter. On a desktop installation of Python that includes Tkinter:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-```bash
-python desktop_prototype.py
-```
+3. Configure your Gemini API key using the `GEMINI_API_KEY` environment variable.
+4. Run the prototype:
 
-## Gemini API key safety
+   ```bash
+   python desktop_prototype.py
+   ```
 
-The source is configured to read an optional Gemini API key from the `GEMINI_API_KEY` environment variable. Do not commit API keys or other secrets to GitHub.
+## Security Note
+Keep your API keys private. Never upload actual API keys or `.env` files to GitHub.
 
-Windows PowerShell example:
+## Important Note
+The included Python file is a desktop prototype. The live application is hosted separately on Streamlit.
 
-```powershell
-$env:GEMINI_API_KEY="YOUR_NEW_API_KEY"
-python desktop_prototype.py
-```
+## Project Purpose
+The goal of this project is to support interview preparation using artificial intelligence and provide students with an accessible platform for practicing interview-related questions.
 
-If an API key was previously embedded in a source file or shared, revoke it and create a replacement before publishing the repository.
-
-## Note about the live demo
-
-The live link above is a Streamlit-hosted application. The source file supplied for this repository is a Tkinter desktop prototype; it is not the Streamlit deployment source. To make this repository fully reproducible for the hosted Streamlit app, add the Streamlit app's own `app.py` and any associated dependency/configuration files if they are available.
+---
+**Project:** AI-Based Adaptive Interview Preparation System
